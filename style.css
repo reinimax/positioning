@@ -1,0 +1,22 @@
+/* Navbar */
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid grey;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.wrapper > * {
+  grid-column: 2;
+}
+
+img {
+  max-width: 100%;
+}
