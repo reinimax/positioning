@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+
 :root {
   --black: rgb(51, 51, 51);
   --grey: rgb(102, 102, 102);
@@ -27,16 +29,29 @@ h1 {
   font-style: italic;
 }
 
+.nyt {
+  font-family: "UnifrakturCook", cursive;
+}
+
+button {
+  border-radius: 3px;
+  cursor: pointer;
+}
+
 .button {
   color: white;
-  background-color: rgb(50, 104, 145);
+  background-color: rgb(86, 123, 149);
   border: 1px solid rgb(50, 104, 145);
-  border-radius: 3px;
   padding: 11px 12px 8px;
   text-transform: uppercase;
   font-size: 11px;
   line-height: 11px;
   font-weight: 700;
+  transition: background-color 0.6s ease;
+}
+
+.button:hover {
+  background-color: rgb(50, 104, 145);
 }
 
 img {
@@ -48,8 +63,61 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(224, 224, 224);
   background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0 7px;
+}
+
+.top-bar-subcontainer {
+  margin-left: 8%;
+}
+
+.top-bar-btns {
+  margin-right: 8%;
+}
+
+.top-bar-btns > button:first-child {
+  margin-right: 3px;
+}
+
+.top-bar-subcontainer > * {
+  margin: 0 7px;
+}
+
+.category {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.category:hover {
+  text-decoration: underline;
+}
+
+.top-bar a {
+  color: black;
+  text-decoration: none;
+}
+
+.top-bar .nyt {
+  font-size: 24px;
+  margin-right: 36px;
+}
+
+.icon-btn {
+  background-color: white;
+  border: 0;
+  padding: 7px;
+}
+
+.icon-btn:hover {
+  background-color: rgb(245, 245, 245);
 }
 
 /* Grid */
