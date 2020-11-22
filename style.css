@@ -58,6 +58,22 @@ img {
   max-width: 100%;
 }
 
+figcaption {
+  max-width: 900px;
+  width: 90%;
+  margin-top: 10px;
+  color: var(--grey);
+  font-size: 0.935rem;
+  line-height: 1.25rem;
+}
+
+.credit {
+  margin-left: 7px;
+  color: rgb(136, 136, 136);
+  font-size: 13px;
+  line-height: 18px;
+}
+
 /* Navbar */
 .top-bar {
   position: fixed;
