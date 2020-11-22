@@ -29,6 +29,12 @@ h1 {
   font-style: italic;
 }
 
+time {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1rem;
+}
+
 .nyt {
   font-family: "UnifrakturCook", cursive;
 }
@@ -83,6 +89,7 @@ figcaption {
   background-color: white;
   box-sizing: border-box;
   padding: 7px 14px 7px;
+  z-index: 10;
 }
 
 .flex-container {
@@ -171,6 +178,88 @@ figcaption {
 
 .sized2 {
   max-width: 720px;
+}
+
+/* Content Header*/
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.header-btns {
+  display: flex;
+  align-items: center;
+}
+
+.main-header > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.935rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  flex: 0 0 100%;
+  margin: 20px 0;
+}
+
+.main-header a {
+  color: var(--black);
+  text-decoration-color: rgb(173, 173, 173);
+  text-decoration-thickness: 1px;
+}
+
+.main-header a:hover {
+  text-decoration: none;
+}
+
+.main-header button {
+  margin-left: 14px;
+}
+
+.btn-round {
+  background-color: rgb(235, 235, 235);
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  height: 40px;
+  width: 20px;
+  position: relative;
+}
+
+.btn-transparent:last-child {
+  width: 30px;
+  padding-bottom: 10px;
+  font-size: 11px;
+}
+
+.btn-transparent > img {
+  height: 30px;
+  position: relative; /* for applying z-index */
+  z-index: 0;
+  opacity: 0.7;
+}
+
+.btn-transparent:last-child img {
+  position: absolute;
+  top: 4px;
+  left: 0;
+}
+
+.btn-transparent:hover > img {
+  opacity: 0.2;
+}
+
+.btn-round:hover {
+  background-color: white;
 }
 
 /* Inflation graphic*/
