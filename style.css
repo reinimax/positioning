@@ -65,18 +65,16 @@ img {
   width: 100%;
   border-bottom: 1px solid rgb(224, 224, 224);
   background-color: white;
+  box-sizing: border-box;
+  padding: 7px 14px 7px;
+}
+
+.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 7px 0 7px;
-}
-
-.top-bar-subcontainer {
-  margin-left: 8%;
-}
-
-.top-bar-btns {
-  margin-right: 8%;
+  max-width: 1635px;
+  margin: 0 auto;
 }
 
 .top-bar-btns > button:first-child {
@@ -84,7 +82,7 @@ img {
 }
 
 .top-bar-subcontainer > * {
-  margin: 0 7px;
+  margin-right: 12px;
 }
 
 .category {
@@ -107,7 +105,6 @@ img {
 
 .top-bar .nyt {
   font-size: 24px;
-  margin-right: 36px;
 }
 
 .icon-btn {
