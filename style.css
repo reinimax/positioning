@@ -460,3 +460,37 @@ figcaption {
   grid-row: 3;
   grid-column: 4;
 }
+
+/* Content Footer */
+.wrapper footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.wrapper footer small {
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+  color: var(--grey);
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.wrapper footer a {
+  color: var(--grey);
+}
+
+.wrapper footer a:hover {
+  text-decoration: none;
+}
+
+.wrapper footer > button {
+  width: 55%;
+}
+
+.footer-btns button {
+  margin-left: 14px;
+}
