@@ -80,6 +80,11 @@ figcaption {
   line-height: 18px;
 }
 
+.extra-margin {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 /* Navbar */
 .top-bar {
   position: fixed;
@@ -320,8 +325,6 @@ figcaption {
 
 #the-morning {
   border-top: 1px solid rgb(204, 204, 204);
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding-top: 1em;
   display: grid;
   grid-template-columns: 1fr 100px;
@@ -367,8 +370,6 @@ figcaption {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 288px 288px auto;
   column-gap: 24px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 #inflation > img {
