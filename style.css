@@ -262,6 +262,62 @@ figcaption {
   background-color: white;
 }
 
+/* Asides */
+.aside > p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 700;
+}
+
+#create-account {
+  text-align: center;
+}
+
+#create-account a {
+  text-decoration: none;
+}
+
+#create-account::before,
+#create-account::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 90px;
+  background-color: rgb(204, 204, 204);
+  margin: 1em auto;
+}
+
+#editor-picks-aside {
+  width: 210px;
+  display: grid;
+  gap: 20px;
+  justify-self: end;
+  /* This makes it fit without creating gaps in the main content */
+  grid-row-end: span 5;
+  align-content: start;
+}
+
+#editor-picks-aside > p {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 1em;
+}
+
+#editor-picks-aside > a {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+#editor-picks-aside > a:hover {
+  text-decoration: underline;
+}
+
 /* Inflation graphic*/
 /* This uses grid's ability to overlay grid elements*/
 #inflation {
