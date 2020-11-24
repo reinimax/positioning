@@ -19,6 +19,7 @@ h2 {
 
 h1,
 h2,
+h3,
 em {
   font-weight: 700;
 }
@@ -462,7 +463,7 @@ figcaption {
 }
 
 /* Content Footer */
-.wrapper footer {
+.wrapper > footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -493,4 +494,114 @@ figcaption {
 
 .footer-btns button {
   margin-left: 14px;
+}
+
+/* END OF CONTENT*/
+
+/* Previews */
+.previews-subcontainer {
+  border-top: 1px solid black;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.previews-subcontainer header {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17px;
+  margin-bottom: 17px;
+}
+
+.previews-subcontainer h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+
+.previews-subcontainer header a {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+}
+
+/* Nwesletters Cards */
+.card {
+  border: 1px solid rgb(204, 204, 204);
+  padding: 1em;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto auto 1fr;
+  align-content: start;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgb(204, 204, 204);
+}
+
+.card > * {
+  grid-column: 1 / -1;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card > img {
+  grid-column: 1 / 2;
+}
+
+.card > button {
+  grid-column: -2 / -1;
+  place-self: start end;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 30px;
+  line-height: 30px;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+}
+
+.card:hover > button {
+  color: white;
+  background-color: black;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin-top: 10px;
+}
+
+.card a {
+  grid-row-end: -1;
+  align-self: end;
+  margin-top: 10px;
+  color: rgb(50, 104, 145);
+  text-decoration: none;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  font-weight: 700;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card .newsletter-frequency {
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 0.6875rem;
+  line-height: 1rem;
+}
+
+.card h3 {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
 }
