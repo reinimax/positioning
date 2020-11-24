@@ -318,6 +318,48 @@ figcaption {
   text-decoration: underline;
 }
 
+#the-morning {
+  border-top: 1px solid rgb(204, 204, 204);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 1em;
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 10px;
+}
+
+#the-morning p {
+  font-size: 17px;
+  line-height: 24px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+#the-morning em {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#the-morning button {
+  background-color: white;
+  place-self: start end;
+  margin-top: 4px;
+  padding: 8px 12px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  border: 1px solid black;
+}
+
+#the-morning button:hover {
+  background-color: black;
+  color: white;
+}
+
 /* Inflation graphic*/
 /* This uses grid's ability to overlay grid elements*/
 #inflation {
@@ -325,6 +367,8 @@ figcaption {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto 288px 288px auto;
   column-gap: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #inflation > img {
