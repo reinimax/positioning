@@ -726,17 +726,19 @@ img {
   line-height: 15px;
   font-style: normal;
   font-weight: 700;
-  margin-bottom: 0.75em;
+}
+
+.footer-navigation nav > * {
+  display: block;
+}
+
+.footer-navigation nav h1 {
+  margin-bottom: 1.5em;
 }
 
 .subscriptions {
   padding-left: 15px;
   border-left: 1px solid rgb(204, 204, 204);
-}
-
-.subscriptions > * {
-  display: block;
-  margin-bottom: 0.5em;
 }
 
 .subscriptions button {
@@ -746,12 +748,13 @@ img {
   font-size: 15px;
   font-weight: 700;
   border: none;
-  height: 25px;
   padding-left: 0;
+  margin-bottom: 10px;
 }
 
 .subscriptions button img {
   margin-right: 5px;
+  vertical-align: middle;
 }
 
 .subscriptions button:hover {
@@ -762,12 +765,23 @@ img {
   margin-bottom: 1em;
 }
 
-.footer-navigation .subscriptions a {
+.footer-navigation .subscriptions a,
+.footer-navigation nav a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   line-height: 21px;
   color: black;
   text-decoration: none;
+}
+
+.footer-navigation nav a {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 0.75em;
+}
+
+.footer-navigation .subscriptions a {
+  margin-bottom: 0.5em;
 }
 
 .footer-navigation .subscriptions a:nth-child(8) {
@@ -776,7 +790,8 @@ img {
   margin-bottom: 1em;
 }
 
-.footer-navigation .subscriptions a:hover {
+.footer-navigation .subscriptions a:hover,
+.footer-navigation nav a:hover {
   text-decoration: underline;
 }
 
